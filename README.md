@@ -65,6 +65,8 @@ This only supports the North American Gamecube version of Wind Waker. (MD5: d8e4
 This works on Gamecube/Wii/Dolphin.  
 The European and Japanese versions of Wind Waker won't work, and neither will Wind Waker HD.  
 
+Note that the GameCube boot up animation in Dolphin doesn't work with the randomizer and will cause the game to crash before reaching the main menu. If you have previously set Dolphin up to play that animation you will need to disable it before launching the randomized game by going to Config -> GameCube in Dolphin and checking "Skip Main Menu".
+
 ### Credits
 
 wwrando:  
