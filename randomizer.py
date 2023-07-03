@@ -395,7 +395,7 @@ class Randomizer:
       if self.options.get("titlelogo"):
         tweaks.modify_title_screen_logo(self)
       if self.options.get("memorylogo"):
-        tweaks.update_game_name_icon_and_banners(self)
+        tweaks.update_game_banners(self)
 										
 	  
 										 
@@ -411,6 +411,9 @@ class Randomizer:
 													 
       if self.options.get("swift_sail2"):
         tweaks.make_sail_behave_like_swift_sail2(self)
+		
+      if self.options.get("normal_sail2"):
+        tweaks.normal_sail_wind(self)
 		
 		
 
@@ -485,7 +488,7 @@ class Randomizer:
 														
 													 
 									
-    # tweaks.update_game_name_icon_and_banners(self)
+    tweaks.update_game_name_icon_and_banners(self)
 												  
 													   
 														 

@@ -786,7 +786,7 @@ def modify_title_screen_logo(self):
   write_u16(data, 0x162, 0x106) # Increase Y pos by 16 pixels (0xF6 -> 0x106)
 
 def update_game_name_icon_and_banners(self):
-  new_game_name = "Wind Waker Randomized %s" % self.seed
+  new_game_name = "%s" % self.seed
   banner_data = self.get_raw_file("files/opening.bnr")
   write_str(banner_data, 0x1860, new_game_name, 0x40)
   
@@ -795,8 +795,43 @@ def update_game_name_icon_and_banners(self):
   write_magic_str(boot_data, 0, new_game_id, 6)
   
 											  
-  new_memory_card_game_name = "Wind Waker Randomizer"
+  new_memory_card_game_name = "Wind Waker"
   self.dol.write_data(write_magic_str, 0x80339690, new_memory_card_game_name, 21)
+  
+  # new_image_file_path = os.path.join(ASSETS_PATH, "banner.png")
+  # image_format = texture_utils.ImageFormat.RGB5A3
+  # palette_format = texture_utils.PaletteFormat.RGB5A3
+  # image_data, _, _, image_width, image_height = texture_utils.encode_image_from_path(new_image_file_path, image_format, palette_format)
+  # assert image_width == 96
+  # assert image_height == 32
+  # assert data_len(image_data) == 0x1800
+  # image_data.seek(0)
+  # write_bytes(banner_data, 0x20, image_data.read())
+  
+  # cardicon_arc = self.get_arc("files/res/CardIcon/cardicon.arc")
+  
+  # memory_card_icon_file_path = os.path.join(ASSETS_PATH, "memory card icon.png")
+  # memory_card_icon = cardicon_arc.get_file("ipl_icon1.bti")
+  # memory_card_icon.replace_image_from_path(memory_card_icon_file_path)
+  # memory_card_icon.save_changes()
+  
+  # memory_card_banner_file_path = os.path.join(ASSETS_PATH, "memory card banner.png")
+  # memory_card_banner = cardicon_arc.get_file("ipl_banner.bti")
+  # memory_card_banner.replace_image_from_path(memory_card_banner_file_path)
+  # memory_card_banner.save_changes()
+  
+def update_game_banners(self):
+  new_game_name = "%s" % self.seed
+  banner_data = self.get_raw_file("files/opening.bnr")
+  write_str(banner_data, 0x1860, new_game_name, 0x40)
+  
+  # new_game_id = "GZLE01"
+  # boot_data = self.get_raw_file("sys/boot.bin")
+  # write_magic_str(boot_data, 0, new_game_id, 6)
+  
+											  
+  # new_memory_card_game_name = "Wind Waker"
+  # self.dol.write_data(write_magic_str, 0x80339690, new_memory_card_game_name, 21)
   
   new_image_file_path = os.path.join(ASSETS_PATH, "banner.png")
   image_format = texture_utils.ImageFormat.RGB5A3
@@ -819,6 +854,7 @@ def update_game_name_icon_and_banners(self):
   memory_card_banner = cardicon_arc.get_file("ipl_banner.bti")
   memory_card_banner.replace_image_from_path(memory_card_banner_file_path)
   memory_card_banner.save_changes()
+  
 def allow_dungeon_items_to_appear_anywhere(self):
   dol_data = self.get_raw_file("sys/main.dol")
   item_get_funcs_list = address_to_offset(0x803888C8)
@@ -1496,6 +1532,9 @@ def increase_misc_animations(self):
   
   # Increase speed Links ends climbing a ladder/vine (0.9 -> 1.4)
   self.dol.write_data(write_float, 0x8035DB20, 1.4)
+  
+  # Increase Link's sidle animation speed (1.6 -> 2.0)
+  self.dol.write_data(write_float, 0x8035D6AC, 2.0)
   
   # Half the number of frames camera takes to focus on an npc for a conversation (from 20 to 10)
   self.dol.write_data(write_u32, 0x8016DA2C, 0x3800000A) # li r0,10
