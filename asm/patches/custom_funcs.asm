@@ -292,22 +292,22 @@ after_starting_triforce_shards:
 ; after_starting_heros_clothes:
 
 
-lis r5, skip_rematch_bosses@ha
-addi r5, r5, skip_rematch_bosses@l
-lbz r5, 0 (r5) ; Load bool of whether rematch bosses should be skipped
-cmpwi r5, 1
-bne after_skipping_rematch_bosses
-lis r3, 0x803C522C@ha
-addi r3, r3, 0x803C522C@l
-li r4, 0x3904 ; Recollection Gohma defeated
-bl onEventBit__11dSv_event_cFUs
-li r4, 0x3902 ; Recollection Kalle Demos defeated
-bl onEventBit__11dSv_event_cFUs
-li r4, 0x3901 ; Recollection Jalhalla defeated
-bl onEventBit__11dSv_event_cFUs
-li r4, 0x3A80 ; Recollection Molgera defeated
-bl onEventBit__11dSv_event_cFUs
-after_skipping_rematch_bosses:
+; lis r5, skip_rematch_bosses@ha
+; addi r5, r5, skip_rematch_bosses@l
+; lbz r5, 0 (r5) ; Load bool of whether rematch bosses should be skipped
+; cmpwi r5, 1
+; bne after_skipping_rematch_bosses
+; lis r3, 0x803C522C@ha
+; addi r3, r3, 0x803C522C@l
+; li r4, 0x3904 ; Recollection Gohma defeated
+; bl onEventBit__11dSv_event_cFUs
+; li r4, 0x3902 ; Recollection Kalle Demos defeated
+; bl onEventBit__11dSv_event_cFUs
+; li r4, 0x3901 ; Recollection Jalhalla defeated
+; bl onEventBit__11dSv_event_cFUs
+; li r4, 0x3A80 ; Recollection Molgera defeated
+; bl onEventBit__11dSv_event_cFUs
+; after_skipping_rematch_bosses:
 
 
 ; Function end stuff
