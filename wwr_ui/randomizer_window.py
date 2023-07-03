@@ -288,7 +288,7 @@ class WWRandomizerWindow(QMainWindow):
     if not any_setting_changed:
       QMessageBox.information(self,
         "Settings already default",
-        "You already have all the default randomization settings."
+        "You already have all the default settings."
       )
   
   def load_settings(self):
@@ -677,7 +677,7 @@ class WWRandomizerWindow(QMainWindow):
       self.ui.custom_model_comment.show()
     
     # Allow customizing the text of the Casual Clothes checkbox.
-    casual_clothes_option_text = str(metadata.get("casual_clothes_option_text", "Casual Clothes"))
+    casual_clothes_option_text = str(metadata.get("casual_clothes_option_text", "Second Quest"))
     if len(casual_clothes_option_text) > 28:
       # 28 character maximum length.
       casual_clothes_option_text = casual_clothes_option_text[:28]

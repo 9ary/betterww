@@ -8,7 +8,7 @@ OPTIONS = OrderedDict([
   ),
   (
     "player_in_casual_clothes",
-    "Enable this if you want to wear your casual clothes instead of the Hero's Clothes."
+    "Edit colors for second quest."
   ),
   (
     "disable_custom_player_voice",
@@ -24,7 +24,7 @@ OPTIONS = OrderedDict([
   ),
   (
     "increase_player_movement_speeds",
-    "Change rolling so that it scales from 20.0 to 26.0 speed depending on the player's speed when they roll."
+    "Change rolling so that it scales from 20.0 to 26.0 speed depending on the player's speed when they roll. Should fix idle rolls."
   ),
   (
     "increase_grapple_animation_speed",
@@ -36,7 +36,7 @@ OPTIONS = OrderedDict([
   ),
   (
     "increase_misc_animations",
-    "Speeds up crawling, climbing, and the camera zoom when talking to an npc."
+    "Speeds up crawling, climbing, sidle and the camera zoom when talking to an npc."
   ),
   (
     "tingle_chests_without_tuner",
@@ -80,15 +80,23 @@ OPTIONS = OrderedDict([
   ),
   (
     "brisk_sail",
-    "Make windy boy go fast. 1.5x faster Swift Sail."
+    "1.5x faster Swift Sail, too fast. Cruising with R will be needed."
   ),
   (
     "brisk_sail2",
-    "Pick this if you want to use Hypatia's HD textures and not have sail replaced by low res textures."
+    "Sail texture will not be replaced, allowing a texture pack to replace it."
   ),
   (
     "swift_sail2",
-    "Pick this if you want to use Hypatia's HD textures and not have sail replaced by low res textures."
+    "Sail texture will not be replaced, allowing a texture pack to replace it."
+  ),
+  (
+    "normal_sail",
+    "Sail is not modified."
+  ),
+  (
+    "normal_sail2",
+    "Sail is the default speed but the wind is always at your back as long as the sail is out."
   ),
   (
     "disable_custom_player_voice",

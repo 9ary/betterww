@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>695</height>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -115,40 +115,10 @@
                 </property>
                </widget>
               </item>
-              <item row="5" column="0">
+              <item row="6" column="0">
                 <widget class="QRadioButton" name="swift_sail">
                  <property name="text">
-                  <string>Swift Sail</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="10" column="0">
-                <widget class="QCheckBox" name="increase_player_movement_speeds">
-                 <property name="text">
-                  <string>Faster Rolling Speed</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="9" column="0">
-                <widget class="QCheckBox" name="increase_grapple_animation_speed">
-                 <property name="text">
-                  <string>Faster Grapple Hook</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="8" column="0">
-                <widget class="QCheckBox" name="increase_block_moving_animation">
-                 <property name="text">
-                  <string>Faster Block Moving</string>
+                  <string>Swift sail</string>
                  </property>
                  <property name="checked">
                   <bool>true</bool>
@@ -156,59 +126,39 @@
                 </widget>
                </item>
               <item row="11" column="0">
+                <widget class="QCheckBox" name="increase_player_movement_speeds">
+                 <property name="text">
+                  <string>Faster rolling speed</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="10" column="0">
+                <widget class="QCheckBox" name="increase_grapple_animation_speed">
+                 <property name="text">
+                  <string>Faster grapple hook</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="9" column="0">
+                <widget class="QCheckBox" name="increase_block_moving_animation">
+                 <property name="text">
+                  <string>Faster block moving</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="12" column="0">
                 <widget class="QCheckBox" name="increase_misc_animations">
                  <property name="text">
-                  <string>Faster Crawling, Climbing, NPC zoom</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="13" column="0">
-                <widget class="QCheckBox" name="tingle_chests_without_tuner">
-                 <property name="text">
-                  <string>Tingle Chests Without Tuner</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="18" column="0">
-                <widget class="QCheckBox" name="invert_camera_x_axis">
-                 <property name="text">
-                  <string>Invert Camera</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="20" column="0">
-                <widget class="QCheckBox" name="reveal_full_sea_chart">
-                 <property name="text">
-                  <string>Reveal Sea Chart</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="19" column="0">
-                <widget class="QCheckBox" name="KORL_control">
-                 <property name="text">
-                  <string>Unrestricted Boat</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="16" column="0">
-                <widget class="QCheckBox" name="song_no_replay">
-                 <property name="text">
-                  <string>No Song Replays</string>
+                  <string>Faster crawling, climbing, NPC zoom</string>
                  </property>
                  <property name="checked">
                   <bool>true</bool>
@@ -216,19 +166,49 @@
                 </widget>
                </item>
               <item row="14" column="0">
-                <widget class="QCheckBox" name="swing_turn">
+                <widget class="QCheckBox" name="tingle_chests_without_tuner">
                  <property name="text">
-                  <string>Turn While Swinging/Grappling</string>
+                  <string>Tingle chests without tuner</string>
                  </property>
                  <property name="checked">
                   <bool>true</bool>
                  </property>
                 </widget>
                </item>
-              <item row="17" column="0">
-                <widget class="QCheckBox" name="remove_title_and_ending_videos">
+              <item row="19" column="0">
+                <widget class="QCheckBox" name="invert_camera_x_axis">
                  <property name="text">
-                  <string>Remove Intro Video</string>
+                  <string>Invert camera</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="21" column="0">
+                <widget class="QCheckBox" name="reveal_full_sea_chart">
+                 <property name="text">
+                  <string>Reveal sea chart</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="20" column="0">
+                <widget class="QCheckBox" name="KORL_control">
+                 <property name="text">
+                  <string>Unrestricted boat</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="17" column="0">
+                <widget class="QCheckBox" name="song_no_replay">
+                 <property name="text">
+                  <string>No song replays</string>
                  </property>
                  <property name="checked">
                   <bool>true</bool>
@@ -236,79 +216,39 @@
                 </widget>
                </item>
               <item row="15" column="0">
+                <widget class="QCheckBox" name="swing_turn">
+                 <property name="text">
+                  <string>Turn while swinging/grappling</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="18" column="0">
+                <widget class="QCheckBox" name="remove_title_and_ending_videos">
+                 <property name="text">
+                  <string>Remove intro video</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="16" column="0">
                 <widget class="QCheckBox" name="ballad">
                  <property name="text">
-                  <string>Faster Ballad of Gales</string>
+                  <string>Faster ballad of gales</string>
                  </property>
                  <property name="checked">
                   <bool>true</bool>
                  </property>
                 </widget>
                </item>
-              <item row="7" column="0">
+              <item row="8" column="0">
                 <widget class="QCheckBox" name="instant_text_boxes">
                  <property name="text">
-                  <string>Instant Text Boxes</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="23" column="0">
-                <widget class="QCheckBox" name="memorylogo">
-                 <property name="text">
-                  <string>Change Memory Card/Dolphin Logo</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="22" column="0">
-                <widget class="QCheckBox" name="titlelogo">
-                 <property name="text">
-                  <string>Change Title Screen Logo</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="6" column="0">
-                <widget class="QRadioButton" name="brisk_sail">
-                 <property name="text">
-                  <string>Brisk Sail</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="6" column="1">
-                <widget class="QRadioButton" name="brisk_sail2">
-                 <property name="text">
-                  <string>Brisk Sail for HD texture pack</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="21" column="0">
-                <widget class="QCheckBox" name="randomize_enemy_palettes">
-                 <property name="text">
-                  <string>Random Enemy Colors</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-              <item row="5" column="1">
-                <widget class="QRadioButton" name="swift_sail2">
-                 <property name="text">
-                  <string>Swift Sail for HD texture pack</string>
+                  <string>Instant text boxes</string>
                  </property>
                  <property name="checked">
                   <bool>true</bool>
@@ -316,6 +256,86 @@
                 </widget>
                </item>
               <item row="24" column="0">
+                <widget class="QCheckBox" name="memorylogo">
+                 <property name="text">
+                  <string>Change memory card/Dolphin logo</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="23" column="0">
+                <widget class="QCheckBox" name="titlelogo">
+                 <property name="text">
+                  <string>Change title screen logo</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="7" column="0">
+                <widget class="QRadioButton" name="brisk_sail">
+                 <property name="text">
+                  <string>Brisk sail</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="7" column="1">
+                <widget class="QRadioButton" name="brisk_sail2">
+                 <property name="text">
+                  <string>Brisk sail for HD texture pack</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="5" column="0">
+                <widget class="QRadioButton" name="normal_sail">
+                 <property name="text">
+                  <string>Normal sail</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="5" column="1">
+                <widget class="QRadioButton" name="normal_sail2">
+                 <property name="text">
+                  <string>Normal sail controls wind</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="22" column="0">
+                <widget class="QCheckBox" name="randomize_enemy_palettes">
+                 <property name="text">
+                  <string>Random enemy colors</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="6" column="1">
+                <widget class="QRadioButton" name="swift_sail2">
+                 <property name="text">
+                  <string>Swift sail for HD texture pack</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              <item row="25" column="0">
                <widget class="QLabel" name="label_8">
                 <property name="text">
                  <string></string>
@@ -338,7 +358,7 @@
                 <item>
                  <widget class="QLabel" name="label_for_custom_player_model">
                   <property name="text">
-                   <string>Player Model</string>
+                   <string>Player model</string>
                   </property>
                  </widget>
                 </item>
@@ -352,7 +372,7 @@
                 <item>
                  <widget class="QLabel" name="label_for_custom_color_preset">
                   <property name="text">
-                   <string>Color Preset</string>
+                   <string>Color preset</string>
                   </property>
                  </widget>
                 </item>
@@ -366,14 +386,14 @@
                 <item>
                  <widget class="QPushButton" name="randomize_all_custom_colors_together">
                   <property name="text">
-                   <string>Randomize Colors Orderly</string>
+                   <string>Randomize colors orderly</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QPushButton" name="randomize_all_custom_colors_separately">
                   <property name="text">
-                   <string>Randomize Colors Chaotically</string>
+                   <string>Randomize colors chaotically</string>
                   </property>
                  </widget>
                 </item>
@@ -384,21 +404,21 @@
                 <item>
                  <widget class="QCheckBox" name="player_in_casual_clothes">
                   <property name="text">
-                   <string>Casual Clothes</string>
+                   <string>Second quest</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QCheckBox" name="disable_custom_player_voice">
                   <property name="text">
-                   <string>Disable Custom Voice</string>
+                   <string>Disable custom voice</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QCheckBox" name="disable_custom_player_items">
                   <property name="text">
-                   <string>Disable Custom Items</string>
+                   <string>Disable custom items</string>
                   </property>
                  </widget>
                 </item>
