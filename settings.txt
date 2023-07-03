@@ -1,6 +1,6 @@
-clean_iso_path: D:/Gamecube ISO/ALOZ Wind Waker Widescreen.iso
-output_folder: D:/Desktop
-seed: p
+clean_iso_path:
+output_folder:
+seed:
 custom_player_model: Link
 player_in_casual_clothes: false
 disable_custom_player_voice: false
