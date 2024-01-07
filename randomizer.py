@@ -653,6 +653,11 @@ class Randomizer:
       return self.arcs_by_path[arc_path]
     else:
       data = self.gcm.read_file_data(arc_path)
+      if arc_path == "files/res/Msg/bmgres.arc":
+        from paths import ASSETS_PATH
+        new_bmgres_path = os.path.join(ASSETS_PATH, "bmgres.arc")
+        with open(new_bmgres_path, "rb") as f:
+          data = BytesIO(f.read())
       arc = RARC()
       arc.read(data)
       self.arcs_by_path[arc_path] = arc
