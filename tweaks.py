@@ -188,30 +188,6 @@ def make_all_text_instant(self):
   for msg in self.bmg.messages:
     msg.initial_draw_type = 1 # Instant initial draw type
     
-    # Get rid of wait commands
-    msg.string = re.sub(
-      r"\\\{1A 07 00 00 07 [0-9a-f]{2} [0-9a-f]{2}\}",
-      "",
-      msg.string, 0, re.IGNORECASE
-    )
-    
-    # Get rid of wait+dismiss commands
-    # Exclude message 7726, for Maggie's Father throwing rupees at you. He only spawns the rupees past a certain frame of his animation, so if you skipped past the text too quickly you wouldn't get any rupees.
-    # Exclude message 2488, for Orca talking to you after you learn the Hurricane Spin. Without the wait+dismiss he would wind up repeating some of his lines once.
-    # if msg.message_id != 7726 and msg.message_id != 2488:
-      # msg.string = re.sub(
-        # r"\\\{1A 07 00 00 04 [0-9a-f]{2} [0-9a-f]{2}\}",
-        # "",
-        # msg.string, 0, re.IGNORECASE
-      # )
-    
-    # Get rid of wait+dismiss (prompt) commands
-    msg.string = re.sub(
-      r"\\\{1A 07 00 00 03 [0-9a-f]{2} [0-9a-f]{2}\}",
-      "",
-      msg.string, 0, re.IGNORECASE
-    )
-  
   # # Also change the B button to act as a hold-to-skip button during dialogue.
   patcher.apply_patch(self, "b_button_skips_text")
   
